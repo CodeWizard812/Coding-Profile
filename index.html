@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="./assets/logo.png" style="border-radius: 50%;" />
+    <title>Coding Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen p-6">
+
+    <div class="w-full max-w-5xl text-center">
+        <h1 class="text-4xl font-semibold mb-2">Coding Portfolio</h1>
+        <p class="text-lg text-gray-600 mb-12">Click to see the profiles</p>
+        
+        <!-- The grid container where JavaScript will inject the cards -->
+        <div id="profiles-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Content will be dynamically generated here -->
+        </div>
+    </div>
+
+    <script src="./index.js">
+    </script>
+</body>
+</html>
